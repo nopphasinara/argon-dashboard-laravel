@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66ca7343889332c2b8ecca11c251430c",
+    "content-hash": "319a2c2fbc19e09b22b50f2da961ab2f",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1336,6 +1336,49 @@
                 "php"
             ],
             "time": "2019-01-12T16:31:37+00:00"
+        },
+        {
+            "name": "nopphasinara/argon-dashboard-laravel",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nopphasinara/argon-dashboard.git",
+                "reference": "cfff0b3efb86dd7ecbabd02844ceb15fbb73815d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nopphasinara/argon-dashboard/zipball/cfff0b3efb86dd7ecbabd02844ceb15fbb73815d",
+                "reference": "cfff0b3efb86dd7ecbabd02844ceb15fbb73815d",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^5.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelFrontendPresets\\ArgonPreset\\ArgonPresetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelFrontendPresets\\ArgonPreset\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel 5.x Front-end preset for argon",
+            "homepage": "https://github.com/nopphasinara/argon-dashboard-laravel",
+            "keywords": [
+                "Argon",
+                "laravel",
+                "preset"
+            ],
+            "time": "2019-02-13T17:02:13+00:00"
         },
         {
             "name": "opis/closure",
@@ -4938,7 +4981,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "nopphasinara/argon-dashboard-laravel": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
